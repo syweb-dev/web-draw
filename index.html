@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUCA.NEX | DRAW</title>
+  <link rel="stylesheet" href="stype.css" />
+  <link rel="shortcut icon" href="/ico/fave.ico" type="image/x-icon" />
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero-text">
+        <p class="eyebrow" data-i18n="eyebrow">Luck Drawer</p>
+        <h1 data-i18n="title">抽签器</h1>
+        <p class="sub" data-i18n="subtitle">一行一个选项，生成签后点击或随机抽取。</p>
+      </div>
+      <div class="hero-actions">
+        <select id="langSelect" class="lang-select" aria-label="Language">
+          <option value="zh">中文</option>
+          <option value="en">English</option>
+        </select>
+        <div class="stamp">DRAW</div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <label class="label" for="options" data-i18n="optionsLabel">选项列表</label>
+      <textarea id="options" rows="8" placeholder="例如：\n小红\n小李\n小王" data-i18n-placeholder="optionsPlaceholder"></textarea>
+
+      <div class="actions">
+        <button id="generate" class="btn primary" data-i18n="generate">生成签</button>
+        <button id="draw" class="btn ghost" data-i18n="drawOne">随机抽一个</button>
+        <button id="reset" class="btn subtle" data-i18n="reset">清空</button>
+      </div>
+
+      <div class="status">
+        <div><span data-i18n="totalLabel">总签数：</span><span id="total">0</span></div>
+        <div><span data-i18n="pickedLabel">已抽出：</span><span id="picked">0</span></div>
+      </div>
+    </section>
+
+    <section class="results">
+      <div class="result-card" id="result">
+        <div class="result-title" data-i18n="resultTitle">本次抽中</div>
+        <div class="result-value" id="resultValue">-</div>
+      </div>
+      <div class="history">
+        <div class="history-title" data-i18n="historyTitle">抽签记录</div>
+        <div class="history-list" id="history"></div>
+      </div>
+    </section>
+
+    <section class="tickets">
+      <div class="tickets-title" data-i18n="ticketsTitle">签池</div>
+      <div class="tickets-grid" id="tickets"></div>
+    </section>
+
+    <footer class="footer">
+      <span data-i18n-html="footerNote">2025 LUCA.NEX <strong>|</strong> This website is deployed on <strong>GITHUB</strong></span>
+      <div class="footer-actions">
+        <a class="btn footer-btn" href="https://github.com/syweb-dev/web-draw" target="_blank" rel="noopener noreferrer" data-i18n="githubRepo">GitHub 仓库</a>
+        <a class="btn footer-btn" href="https://www.lucanex.top/" target="_blank" rel="noopener noreferrer" data-i18n="devHome">开发者主页</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="lang.js"></script>
+  <script src="js.js"></script>
+</body>
+</html>

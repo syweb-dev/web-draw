@@ -1,0 +1,47 @@
+window.LANG_DEFAULT = 'zh';
+window.LANG_DATA = {
+  zh: {
+    eyebrow: 'Luck Drawer',
+    title: '抽签器',
+    subtitle: '一行一个选项，生成签后点击或随机抽取。',
+    optionsLabel: '选项列表',
+    optionsPlaceholder: '例如：\n小红\n小李\n小王',
+    generate: '生成签',
+    drawOne: '随机抽一个',
+    reset: '清空',
+    totalLabel: '总签数：',
+    pickedLabel: '已抽出：',
+    resultTitle: '本次抽中',
+    historyTitle: '抽签记录',
+    ticketsTitle: '签池',
+    footerNote: '2025 LUCA.NEX <strong>|</strong> This website is deployed on <strong>GITHUB</strong>',
+    githubRepo: 'GitHub 仓库',
+    devHome: '开发者主页',
+    enterOptions: '请先输入选项',
+    drawnOut: '已全部抽完',
+    ticketPrefix: '签',
+    ticketPicked: '已抽'
+  },
+  en: {
+    eyebrow: 'Luck Drawer',
+    title: 'Draw Lots',
+    subtitle: 'One option per line. Generate tickets, click or draw randomly.',
+    optionsLabel: 'Options',
+    optionsPlaceholder: 'Example:\nAmy\nBen\nCindy',
+    generate: 'Generate Tickets',
+    drawOne: 'Draw One',
+    reset: 'Clear',
+    totalLabel: 'Total tickets: ',
+    pickedLabel: 'Picked: ',
+    resultTitle: 'Result',
+    historyTitle: 'Draw History',
+    ticketsTitle: 'Ticket Pool',
+    footerNote: '2025 LUCA.NEX <strong>|</strong> This website is deployed on <strong>GITHUB</strong>',
+    githubRepo: 'GitHub Repo',
+    devHome: 'Developer Home',
+    enterOptions: 'Please enter options first',
+    drawnOut: 'All tickets are drawn',
+    ticketPrefix: 'Ticket',
+    ticketPicked: 'Picked'
+  }
+};
